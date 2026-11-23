@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akmal Evano Wisnu Putra — Portofolio</title>
+  <meta name="description" content="Portofolio Akmal Evano Wisnu Putra, siswa SMK jurusan Rekayasa Perangkat Lunak.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">PORTOFOLIO </a>
+      <button class="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting">Halo, saya</p>
+          <h1>Akmal Evano Wisnu Putra</h1>
+          <p class="typing-line"><span id="typing"></span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="hero-text">
+            Halo, saya Akmal Evano Wisnu Putra. Saat ini saya fokus belajar pemrograman dan pembuatan website di jurusan RPL. 
+            Saya akan terus belajar untuk meningkatkan skills saya dan berguna buat masyarakat .
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn">Lihat Proyek Saya</a>
+            <a href="contact.html" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-wrap">
+            
+            <img src="Photo/profile.png" alt="Foto profil Akmal Evano Wisnu Putra" width="400" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT & EDUCATION ================= -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Tentang Saya</h2>
+          <p>
+            Saya Vano,pelajar jurusan Rekayasa Perangkat Lunak di SMK Krian 1 Sidoarjo yang mulai tertarik dengan pemrograman gara-gara sering menonton film bertema komputer. 
+            Meskipun masih di tahap pemula,saya sangat antusias mempelajari bahasa Pemrograman dari nol.
+          </p>
+          <p>
+            Membangun website portofolio ini menjadi langkah awal yang membanggakan bagi saya. Selain menyukai dunia digital dan bermain game, saya juga aktif berolahraga lewat sepak bola. 
+            Ke depannya, saya ingin terus mengasah kemampuan agar bisa menjadi software engineer yang handal.
+          </p>
+          <ul class="facts">
+            <li><span>Sekolah</span><strong>SMK Krian 1 Sidoarjo</strong></li>
+            <li><span>Jurusan</span><strong>Rekayasa Perangkat Lunak</strong></li>
+            <li><span>Fokus belajar</span><strong>Tentang Dunia Komputer</strong></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="section-title">Pendidikan</h2>
+          <p class="section-sub">Perjalanan belajar saya, dari yang terbaru.</p>
+    
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-card">
+                <span class="period">2026 – Sekarang</span>
+                <h3>SMK Krian 1 Sidoarjo</h3>
+                <p>Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-card">
+                <span class="period">2023 – 2026</span>
+                <h3>SMPN 1 Krian</h3>
+                <p>Sekolah Menengah Pertama</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-card">
+                <span class="period">2018 – 2023</span>
+                <h3>SDN Krian 3</h3>
+                <p>Sekolah Dasar</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Keahlian</h2>
+        <p class="section-sub">Tiga bidang yang sedang saya dalami saat ini.</p>
+
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <div class="skill-icon">Py</div>
+            <h3>Python</h3>
+            <p>Belajar logika dasar, struktur data, dan membuat program sederhana.</p>
+            <div class="skill-level"><span>Level</span><span>Pemula</span></div>
+            <div class="bar" role="img" aria-label="Python level pemula"><span data-level="10"></span></div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-icon">Jv</div>
+            <h3>Java</h3>
+            <p>Mempelajari dasar pemrograman berorientasi objek (OOP).</p>
+            <div class="skill-level"><span>Level</span><span>Pemula</span></div>
+            <div class="bar" role="img" aria-label="Java level pemula"><span data-level="10"></span></div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Pembuatan Website</h3>
+            <p>Membangun halaman web responsif dengan HTML, CSS, dan JavaScript.</p>
+            <div class="skill-level"><span>HTML, CSS, JS</span><span>Pemula</span></div>
+            <div class="bar" role="img" aria-label="Pembuatan website level pemula"><span data-level="10"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Akmal Evano Wisnu Putra</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
