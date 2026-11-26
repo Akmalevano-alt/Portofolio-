@@ -1,6 +1,0 @@
-Letakkan file CV (PDF) kamu di folder ini dengan nama:
-
-  CV-Akmal-Evano-Wisnu-Putra.pdf
-
-Tombol "Unduh CV" di beranda akan mengunduh file tersebut.
-(Kalau mau nama lain, ubah href & download di index.html.)
