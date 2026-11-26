@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="cert.title">Sertifikat & Prestasi — Akmal Evano Wisnu Putra</title>
+  <meta name="theme-color" content="#0A0A0A">
+  <!-- Terapkan tema & bahasa tersimpan sebelum halaman tampil (hindari kedip) -->
+  <script>
+    try {
+      var d = document.documentElement;
+      d.setAttribute("data-theme", localStorage.getItem("theme") === "light" ? "light" : "dark");
+      d.lang = localStorage.getItem("lang") === "en" ? "en" : "id";
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" data-i18n="logo">Portofolio</a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Proyek</a></li>
+          <li><a href="certificates.html" class="active" data-i18n="nav.certs">Sertifikat</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <!-- Ganti bahasa -->
+        <button class="tool-btn lang-btn" id="lang-toggle" type="button" data-lang="id" aria-label="Ganti bahasa ke Inggris" title="Ganti bahasa ke Inggris">
+          <span class="l-id">ID</span><span class="sep">/</span><span class="l-en">EN</span>
+        </button>
+        <!-- Ganti tema gelap / terang -->
+        <button class="tool-btn" id="theme-toggle" type="button" aria-label="Ganti ke tema terang" title="Ganti ke tema terang">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Buka menu" data-i18n-attr="aria-label=menu.open" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="cert.h1">Sertifikat</h1>
+        <p data-i18n="cert.sub">Sertifikat saya selama belajar. Ketuk atau klik gambar untuk memperbesar.</p>
+      </div>
+    </section>
+
+    <!-- GANTI JUDUL, PENERBIT & TAHUN SERTIFIKAT DI SINI -->
+    <section class="container grid-3">
+
+      <article class="card cert-card">
+        <button class="cert-thumb" type="button" aria-label="Perbesar sertifikat" data-i18n-attr="aria-label=cert.zoom">
+          <!-- GANTI GAMBAR SERTIFIKAT DI SINI -->
+          <img src="Photo/certificated1.jpg" alt="Sertifikat Coding Foundations dari Sololearn" data-i18n-attr="alt=cert.alt1" width="600" height="420">
+          <span class="zoom-hint" data-i18n="cert.hint">Perbesar</span>
+        </button>
+        <div class="card-body">
+          <h3>Coding Foundations</h3>
+          <div class="cert-meta"><span><span data-i18n="cert.issuer">Penerbit</span>: <strong>Sololearn</strong></span><span>2026</span></div>
+        </div>
+      </article>
+
+      <article class="card cert-card">
+        <button class="cert-thumb" type="button" aria-label="Perbesar sertifikat" data-i18n-attr="aria-label=cert.zoom">
+          <!-- GANTI GAMBAR SERTIFIKAT DI SINI -->
+          <img src="Photo/coming-soon-id.svg" alt="Sertifikat segera hadir" data-i18n-attr="src=cert.soonImg;alt=cert.altSoon" width="600" height="420">
+          <span class="zoom-hint" data-i18n="cert.hint">Perbesar</span>
+        </button>
+        <div class="card-body">
+          <h3 data-i18n="cert.soon">Segera Hadir</h3>
+          <div class="cert-meta"><span><span data-i18n="cert.issuer">Penerbit</span>: <strong data-i18n="cert.issuerName">Nama Penerbit</strong></span><span>2025</span></div>
+        </div>
+      </article>
+
+      <article class="card cert-card">
+        <button class="cert-thumb" type="button" aria-label="Perbesar sertifikat" data-i18n-attr="aria-label=cert.zoom">
+          <!-- GANTI GAMBAR SERTIFIKAT DI SINI -->
+          <img src="Photo/coming-soon-id.svg" alt="Sertifikat segera hadir" data-i18n-attr="src=cert.soonImg;alt=cert.altSoon" width="600" height="420">
+          <span class="zoom-hint" data-i18n="cert.hint">Perbesar</span>
+        </button>
+        <div class="card-body">
+          <h3 data-i18n="cert.soon">Segera Hadir</h3>
+          <div class="cert-meta"><span><span data-i18n="cert.issuer">Penerbit</span>: <strong data-i18n="cert.issuerName">Nama Penerbit</strong></span><span>2026</span></div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ================= LIGHTBOX (zoom: tombol, scroll, cubit, ketuk 2x) ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau sertifikat" data-i18n-attr="aria-label=cert.lb">
+    <div class="lb-toolbar">
+      <button class="lb-btn" type="button" data-zoom="out" aria-label="Perkecil gambar" data-i18n-attr="aria-label=lb.out;title=lb.out">&minus;</button>
+      <button class="lb-btn lb-level" type="button" data-zoom="reset" aria-label="Ukuran asli" data-i18n-attr="aria-label=lb.reset;title=lb.reset">100%</button>
+      <button class="lb-btn" type="button" data-zoom="in" aria-label="Perbesar gambar" data-i18n-attr="aria-label=lb.in;title=lb.in">+</button>
+      <button class="lightbox-close" type="button" aria-label="Tutup" data-i18n-attr="aria-label=lb.close">&times;</button>
+    </div>
+    <div class="lb-stage"><img src="" alt="" draggable="false"></div>
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Akmal Evano Wisnu Putra</p>
+      <nav aria-label="Footer">
+        <a href="index.html" data-i18n="nav.home">Beranda</a>
+        <a href="projects.html" data-i18n="nav.projects">Proyek</a>
+        <a href="certificates.html" data-i18n="nav.certs">Sertifikat</a>
+        <a href="contact.html" data-i18n="nav.contact">Kontak</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
